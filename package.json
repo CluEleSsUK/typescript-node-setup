@@ -1,0 +1,22 @@
+{
+  "name": "game-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main/index.ts",
+  "scripts": {
+    "clean": "rm -rf ./build/*",
+    "compile": "tsc --project tsconfig.json",
+    "start": "npm run clean && npm run compile && node ./build/index.js --experimental-modules",
+    "test": "mocha ./build/test/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.9",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.7.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1",
+    "typescript": "^3.7.5"
+  }
+}
