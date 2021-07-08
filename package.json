@@ -7,7 +7,7 @@
     "clean": "rm -rf ./build/*",
     "compile": "tsc --project tsconfig.json",
     "startDev": "nodemon --watch './src' -e ts,tsx,json,css --exec 'npm run start'",
-    "start": "npm run clean && npm run compile && node ./build/index.js --experimental-modules",
+    "start": "npm run compile && node ./build/main/index.js --experimental-modules",
     "test": "mocha ./build/test/*.js"
   },
   "author": "",
