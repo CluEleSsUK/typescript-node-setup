@@ -1,0 +1,8 @@
+import { expect } from "chai"
+
+describe("hello world", () => {
+  it("works", () => {
+    expect(true).equals(true)
+  })
+})
+
