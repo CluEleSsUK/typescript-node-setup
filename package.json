@@ -3,7 +3,7 @@
   "description": "",
   "version": "0.0.1",
   "scripts": {
-    "build": "tsc --emitDeclarationOnly -d ./src/index.ts && esbuild ./src/index.ts --bundle --platform=node --target=node16 --outfile=index.js",
+    "build": "tsc --emitDeclarationOnly -d ./src/index.ts && esbuild ./src/index.ts --bundle --platform=node --target=node22 --outfile=index.js",
     "check": "tsc --noEmit",
     "ci": "npm run build && npm run lint && npm run check && npm run test",
     "clean": "rm -rf ./dist/*",
