@@ -10,7 +10,7 @@
     "clean": "rm -rf ./dist/*",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "start": "ts-node ./src/index.ts",
+    "start": "node --loader ts-node/esm src/index.ts",
     "test": "jest ./test/*.test.ts"
   },
   "author": "CluEleSsUK",
